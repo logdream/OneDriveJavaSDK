@@ -119,7 +119,7 @@ public class OneDriveSession implements Runnable {
     private static void handleAuthRequest(OneDriveSession session, String messageBody) throws OneDriveAuthenticationException {
         JSONParser jsonParser = new JSONParser();
         //Url of the second step of the Code-FLow guide
-        String oAuthCodeRedeemURL = String.format("%s/common/oauth2/v2.0/authorize?", ENDPOINT);
+        String oAuthCodeRedeemURL = String.format("%s/common/oauth2/v2.0/token?", ENDPOINT);
 
         RequestBody oAuthCodeRedeemBody = RequestBody.create(MediaType.parse("application/x-www-form-urlencoded"), messageBody);
         // Create request for remote resource.

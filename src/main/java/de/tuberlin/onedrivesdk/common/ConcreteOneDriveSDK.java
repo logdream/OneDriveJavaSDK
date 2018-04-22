@@ -35,7 +35,7 @@ public class ConcreteOneDriveSDK implements OneDriveSDK {
     private static final Logger logger = LogManager.getLogger(OneDriveSession.class);
     private static final Gson gson = new Gson();
 
-    private String baseUrl = "https://api.onedrive.com/v1.0/";
+    private String baseUrl = "https://graph.microsoft.com/v1.0/";
     private OneDriveSession session;
 
     /**

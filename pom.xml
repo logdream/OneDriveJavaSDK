@@ -27,6 +27,7 @@
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
+					<skip>true</skip>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -62,7 +63,7 @@
 						<branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
 						<includes><include>**/*</include></includes>
 						<repositoryName>onedrivejavasdk</repositoryName>      <!-- github repo name -->
-						<repositoryOwner>tawalaya</repositoryOwner>    <!-- github username  -->
+						<repositoryOwner>logdream</repositoryOwner>    <!-- github username  -->
 					</configuration>
 					<executions>
 						<!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
